@@ -16,13 +16,45 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
 }
 
+/*Кнопки*/
+.button-blue {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+}
 
+.button-brown {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-transform: uppercase;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+}
+
+/*Поля форм*/
+input.field {
+  font-family: "PT Sans";
+}
+
+input.control-input {
+  font-family: "PT Sans";
+}
 
 /* Pages */
 
@@ -53,10 +85,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: #ffffff;
   background-color: #756157;
-  text-transform: uppercase;
 }
 
 .main-index {
@@ -68,9 +98,8 @@ body {
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
 }
-
-/* Как отцентровать текст на фоне?*/
 
 .advantages-sedona-description {
   font-weight: 700;
@@ -111,7 +140,7 @@ body {
 }
 
 .number {
-  ont-weight: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -154,6 +183,10 @@ body {
   height: 384px;
 }
 
+.hotel-search {
+  text-align: center;
+}
+
 .hotel-search-question {
   font-weight: 700;
   font-size: 30px;
@@ -177,10 +210,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #756157;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -209,14 +238,10 @@ body {
   background-color: #ffffff;
 }
 
-.button-newsletter.button-blue {
+.button-newsletter {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-transform: uppercase;
 }
 
 .contacts-phone {
@@ -228,3 +253,62 @@ body {
   text-align: center;
   text-decoration: none;
 }
+
+.inner-header {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.catalog-hotel {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.catalog-filter-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.control-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.control-input-reset {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.filter-container {
+  background-image: url("../images/catalog/filter-background.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
