@@ -260,12 +260,10 @@ input.control-input {
   text-decoration: none;
 }
 
-.inner-header {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-}
-
-.catalog-hotel {
+.filter-container {
+  background-image: url("../images/catalog/filter-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
@@ -284,6 +282,7 @@ input.control-input {
 }
 
 .breadcrumbs-link {
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -312,19 +311,12 @@ input.control-input {
   text-align: center;
 }
 
-/*Фон для фильтров как вставить?*/
-.filter-container {
-  background-image: url("../images/catalog/filter-background.png");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
 
 .catalog-sorting-text {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  background-color: #ffffff;
   text-transform: uppercase;
 }
 
