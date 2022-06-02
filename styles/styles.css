@@ -226,15 +226,15 @@ input.control-input {
   background-image: url("../images/footer/footer-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
 }
 
 .subscription-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -242,9 +242,6 @@ input.control-input {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
 }
 
 .button-newsletter {
