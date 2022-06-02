@@ -43,6 +43,15 @@ body {
   text-transform: uppercase;
 }
 
+.button-green {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+  text-transform: uppercase;
+}
 .pagination-current {
   background-color: #F2F2F2;
 }
@@ -306,9 +315,52 @@ input.control-input {
   text-align: center;
 }
 
+/*Фон для фильтров как вставить?*/
 .filter-container {
   background-image: url("../images/catalog/filter-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.catalog-sorting-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hotel-card-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.hotel-description-link {
+  text-decoration: none;
+}
+
+.pagination-link {
+  text-decoration: none;
 }
 
