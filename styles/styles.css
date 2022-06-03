@@ -18,23 +18,13 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
-  background-color: #ffffff;
+  margin: 0;
 }
 
 /*Кнопки*/
-.button-blue {
-  font-family: "PT Sans";
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-transform: uppercase;
-}
 
-.button-brown {
-  font-family: "PT Sans";
+.button-basic {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -43,8 +33,18 @@ body {
   text-transform: uppercase;
 }
 
-.button-green {
-  font-family: "PT Sans";
+.button-second {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+}
+
+.button-selected {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -52,30 +52,31 @@ body {
   background-color: #7DB54F;
   text-transform: uppercase;
 }
+
+/*Пагинация*/
 .pagination-current {
+  color: #000000;
   background-color: #F2F2F2;
+}
+
+.pagination-link {
+  text-decoration: none;
 }
 
 /*Поля форм*/
 input.field {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
 input.control-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
 }
 
-/* Pages */
-
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
+/*Header*/
 
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -84,24 +85,19 @@ input.control-input {
 .user-menu-link {
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
 }
 
-.user-menu-link.button-brown {
-  font-weight: 700;
+.user-menu-link.button-basic {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   background-color: #756157;
 }
 
-.main-index {
-  color: #000000;
-  background-color: #ffffff;
-}
+/*Index*/
 
 .main-image {
   background-image: url("../images/index/index-background.jpg");
@@ -110,61 +106,53 @@ input.control-input {
   text-align: center;
 }
 
+.advantages {
+  text-align: center;
+}
+
 .advantages-sedona-description {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
   text-transform: uppercase;
 }
 
 .advantages-sedona-reasons {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
   color: #333333;
   background-color: #ffffff;
-}
-
-.advantages-list {
-  text-align: center;
 }
 
 .advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .advantages-description {
-  font-weight: 400;
   font-size: 18px;
   line-height: 12px;
-  text-align: center;
+}
+
+.advantages-description-second {
+  color: #333333;
 }
 
 .number {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
 }
 
-.number-white {
+.number-first {
   color: #ffffff;
 }
 
-.advantages-title-white,
-.advantages-description-white {
+.advantages-title-first,
+.advantages-description-first {
   color: #ffffff;
 }
 
-.advantages-item-blue {
+.advantages-item-first {
   background-color: #82B3D3;
 }
 
@@ -172,8 +160,12 @@ input.control-input {
   background-color: #ffffff;
 }
 
-.advantages-description-gray {
-  color: #333333;
+.advantages-item-second {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-third {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-image-first {
@@ -200,26 +192,24 @@ input.control-input {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
   text-transform: uppercase;
 }
 
 .hotel-search-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
   color: #333333;
   background-color: #ffffff;
 }
 
-.hotel-search-link.button-brown {
+.hotel-search-link.button-basic {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
+}
+
+/*Футер*/
+.footer-subscription {
+  text-align: center;
 }
 
 .footer-subscription {
@@ -238,20 +228,12 @@ input.control-input {
   text-transform: uppercase;
 }
 
-.subscription-description {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-}
-
 .button-newsletter {
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
 }
 
 .contacts-phone {
-  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -259,6 +241,8 @@ input.control-input {
   text-align: center;
   text-decoration: none;
 }
+
+/*каталог*/
 
 .filter-container {
   background-image: url("../images/catalog/filter-background.png");
@@ -276,7 +260,6 @@ input.control-input {
 }
 
 .breadcrumbs-list {
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
 }
@@ -289,23 +272,19 @@ input.control-input {
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
 }
 
 .catalog-filter-list {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .control-price {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
 
 .control-input-reset {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -321,35 +300,33 @@ input.control-input {
 }
 
 .select-control {
-  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
 }
+
 
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
-  background-color: #ffffff;
   text-transform: uppercase;
 }
 
 .hotel-card-text {
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
 }
 
+.hotel-card-rating-text{
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .hotel-description-link {
   text-decoration: none;
 }
-
-.pagination-link {
-  text-decoration: none;
-}
-
