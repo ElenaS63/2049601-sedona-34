@@ -336,6 +336,7 @@ input.control-input {
 .hotel-card-rating-text{
   font-size: 16px;
   line-height: 20px;
+  background-color: #F2F2F2;
 }
 
 .hotel-description-link {
