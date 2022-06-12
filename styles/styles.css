@@ -361,8 +361,12 @@ input.control-input {
   flex-wrap: wrap;
 }
 
-.footer-social-item:not(:last-child) {
+.footer-social-item {
   margin-right: 26px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-phone {
@@ -383,7 +387,6 @@ input.control-input {
 .footer-link {
   width: 115px;
   margin: 43px 72px 43px 53px;
-
 }
 
 /*каталог*/
