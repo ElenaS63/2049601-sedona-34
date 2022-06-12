@@ -533,12 +533,29 @@ input.control-input {
 }
 
 /*Пагинация*/
+.pagination {
+  display: flex;
+  width: 1056px;
+  margin: 96px 72px 25px;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: 270px;
+}
 
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
 }
 
 .pagination-current {
@@ -546,27 +563,14 @@ input.control-input {
   background-color: #F2F2F2;
 }
 
-.pagination {
-  display: flex;
-  width: 1056px;
-  margin: 0 auto;
-}
-
-.pagination-list {
-  margin: 0;
-  padding: 0;
-}
-
-.pagination-item {
-  width: 400px;
-  margin-right: 270px;
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .view-option {
-  width: 160px;
   margin-left: auto;
+  width: 160px;
 }
-
 
 /*Прячет скрыте элементы*/
 .visually-hidden {
