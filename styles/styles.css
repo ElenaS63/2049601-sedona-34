@@ -86,6 +86,10 @@ input.control-input {
 
 /*Header*/
 
+.page-header-logo {
+  display: block;
+}
+
 .page-header {
   display: flex;
   width: 1200px;
@@ -161,7 +165,7 @@ input.control-input {
 
 .main-image-welcome {
   display: block;
-  margin: 0 auto;
+  margin: 51px 371px 82px;
 }
 
 .main-image {
@@ -170,6 +174,7 @@ input.control-input {
   background-repeat: no-repeat;
 }
 
+/*Аdvantages*/
 .advantages {
   text-align: center;
 }
@@ -179,6 +184,7 @@ input.control-input {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-sedona-description {
@@ -186,11 +192,13 @@ input.control-input {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 63px 290px 31px;
 }
 
 .advantages-sedona-reasons {
   color: #333333;
   background-color: #ffffff;
+  margin: 0 273px 90px;
 }
 
 .advantages-title {
@@ -265,17 +273,23 @@ input.control-input {
   text-align: center;
 }
 
-
 .hotel-search-question {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 0;
+  margin: 91px 451px 29px;
+
 }
 
 .hotel-search-description {
   color: #333333;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-left: 304px;
+  margin-right: 304px;
 }
 
 .hotel-search-link.button-basic {
@@ -283,6 +297,9 @@ input.control-input {
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
+  display: block;
+  width: 574;
+  margin: 56px 313px 93px;
 }
 
 /*Футер*/
@@ -309,6 +326,16 @@ input.control-input {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  min-width: 404px;
+  margin: 94px 398px 29px;
+}
+
+.subscription-description {
+  min-width: 476px;
+  margin: 0;
+  padding: 0;
+  margin-left: 362px;
+  margin-right: 362px;
 }
 
 .button-newsletter {
@@ -316,19 +343,33 @@ input.control-input {
   line-height: 36px;
 }
 
+.newsletter-form {
+  width: 600px;
+  padding: 46px 200px 94px;
+}
+
 .footer-social {
-  width: 142px;
-  margin-left: 72px;
+  width: 116px;
+  margin: 49px 52px 54px 72px;
 }
 
 .footer-social-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 26px;
 }
 
 .footer-phone {
   width: 720px;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .contacts-phone {
@@ -341,8 +382,8 @@ input.control-input {
 
 .footer-link {
   width: 115px;
-  margin-right: 70px;
-  margin-left: 53px;
+  margin: 43px 72px 43px 53px;
+
 }
 
 /*каталог*/
@@ -375,9 +416,9 @@ input.control-input {
 }
 
 .catalog-filter-container {
-width: 1060px;
-margin: 0 auto;
-display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -436,7 +477,7 @@ display: flex;
 }
 
 .hotel-card {
-width: 340px;
+  width: 340px;
 }
 
 .hotel-card-title {
