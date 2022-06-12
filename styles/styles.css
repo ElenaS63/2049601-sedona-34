@@ -29,6 +29,16 @@ body {
   min-height: 100%;
 }
 
+/* Нужно ли так делать для стики-футер? обертка для содержимого body
+.body-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+*/
+
 /*Кнопки*/
 
 .button-basic {
@@ -85,6 +95,9 @@ input.control-input {
 .header-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -106,14 +119,19 @@ input.control-input {
 
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  padding: 20px 17px;
 }
 
+
 .user-menu-link {
+  min-width: 42px;
+  min-height: 66px;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
@@ -478,4 +496,17 @@ width: 340px;
 .view-option {
   width: 160px;
   margin-left: auto;
+}
+
+
+/*Прячет скрыте элементы*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
