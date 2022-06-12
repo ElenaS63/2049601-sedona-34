@@ -271,6 +271,7 @@ input.control-input {
 
 .hotel-search {
   text-align: center;
+  padding-bottom: 93px;
 }
 
 .hotel-search-question {
@@ -298,8 +299,10 @@ input.control-input {
   line-height: 36px;
   text-decoration: none;
   display: block;
-  width: 574;
-  margin: 56px 313px 93px;
+  width: 574px;
+  margin-top: 56px;
+  margin-left: 313px;
+  margin-right: 313px;
 }
 
 /*Футер*/
@@ -399,18 +402,28 @@ input.control-input {
   background-color: #82B3D3;
   display: flex;
   flex-direction: column;
+  padding: 35px 70px 70px;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-header {
+  padding-bottom: 40px;
 }
 
 .breadcrumbs-list {
   font-size: 16px;
   line-height: 21px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -445,10 +458,10 @@ input.control-input {
   text-align: center;
 }
 
-.catalog-sorting {
+.catalog-sorting-container {
   display: flex;
   width: 1056px;
-  margin: 0 auto;
+  margin: 50px 71px 56px;
 }
 
 .catalog-sorting-text {
@@ -457,6 +470,8 @@ input.control-input {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-right: 190px;
 }
 
 .select-control {
@@ -465,6 +480,15 @@ input.control-input {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+}
+
+.button-view-container {
+  margin-left: 78px;
+}
+
+.button-view {
+  width: 48px;
+  height: 48px;
 }
 
 .catalog {
@@ -477,6 +501,7 @@ input.control-input {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .hotel-card {
