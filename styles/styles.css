@@ -29,16 +29,6 @@ body {
   min-height: 100%;
 }
 
-/* Нужно ли так делать для стики-футер? обертка для содержимого body
-.body-container {
-  width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-*/
-
 /*Кнопки*/
 
 .button-basic {
@@ -109,14 +99,21 @@ input.control-input {
   width: 139px;
   margin-left: 70px;
   margin-right: 30px;
+  margin-bottom: -10px;
+  z-index: 1;
 }
 
 .navigation-list {
   width: 390px;
 }
 
+.user-menu-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .user-menu-list {
-  max-width: 264px;
+  width: 264px;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -198,7 +195,7 @@ input.control-input {
 .advantages-sedona-reasons {
   color: #333333;
   background-color: #ffffff;
-  margin: 0 273px 90px;
+  margin: 0 271px 90px;
 }
 
 .advantages-title {
@@ -483,6 +480,7 @@ input.control-input {
 }
 
 .button-view-container {
+  display: flex;
   margin-left: 78px;
 }
 
@@ -535,6 +533,7 @@ input.control-input {
 /*Пагинация*/
 .pagination {
   display: flex;
+  padding: 0;
   width: 1056px;
   margin: 96px 72px 25px;
 }
