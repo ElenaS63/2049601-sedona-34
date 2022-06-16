@@ -177,12 +177,28 @@ input.control-input {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
+
+/*Расположение элементов преимуществ по гриду*/
+
+.advantages-city {
+  grid-column: 1/-1;
+}
+
+.advantages-house {
+  grid-column: 1/2;
+}
+
+.advantages-bridge {
+  grid-column: 1/-1;
+}
+
 
 .advantages-sedona-description {
   font-weight: 700;
@@ -234,10 +250,6 @@ input.control-input {
 
 .advantages-item-first {
   background-color: #82B3D3;
-}
-
-.advantages-list-city {
-  background-color: #ffffff;
 }
 
 .advantages-item-second {
@@ -348,13 +360,10 @@ input.control-input {
   padding: 46px 200px 94px;
 }
 
-.footer-social {
-  width: 116px;
-  margin: 49px 52px 54px 72px;
-}
 
 .footer-social-list {
-  margin: 0;
+  width: 142px;
+  margin: 45px 42px 35px 70px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -362,11 +371,8 @@ input.control-input {
 }
 
 .footer-social-item {
-  margin-right: 26px;
-}
-
-.footer-social-item:nth-child(3n) {
-  margin-right: 0;
+  width: 47px;
+  height: 40px;
 }
 
 .footer-phone {
@@ -384,10 +390,6 @@ input.control-input {
   text-decoration: none;
 }
 
-.footer-link {
-  width: 115px;
-  margin: 43px 72px 43px 53px;
-}
 
 /*каталог*/
 
