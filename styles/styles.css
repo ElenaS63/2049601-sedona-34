@@ -166,7 +166,8 @@ input.control-input {
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 51px 371px 82px;;
+  padding: 51px 371px 82px;
+  ;
 }
 
 /*Аdvantages*/
@@ -359,9 +360,21 @@ input.control-input {
 }
 
 
+.contacts-container {
+  display: flex;
+  width: 1200px;
+  padding: 40px 69px 30px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footer-social {
+  margin-right: 42px;
+}
+
 .footer-social-list {
   width: 142px;
-  margin: 45px 42px 35px 70px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -371,13 +384,14 @@ input.control-input {
 .footer-social-item {
   width: 47px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-phone {
   width: 720px;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
 }
 
 .contacts-phone {
@@ -386,8 +400,14 @@ input.control-input {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
+.footer-link {
+  margin-left: 43px;
+}
 
 /*каталог*/
 
@@ -403,7 +423,7 @@ input.control-input {
 }
 
 .catalog-hotel {
- margin-top: 40px;
+  margin-top: 40px;
 }
 
 .inner-header-title {
@@ -426,15 +446,15 @@ input.control-input {
 
 .breadcrumbs-item {
   display: flex;
+  min-width: 12px;
+  min-height: 12px;
 }
 
-.breadcrumbs-item:not(:last-child){
+.breadcrumbs-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .breadcrumbs-link {
-  min-width: 12px;
-  min-height: 12px;
   color: #FFFFFF;
   text-decoration: none;
 }
