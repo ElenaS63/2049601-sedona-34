@@ -207,58 +207,43 @@ input.control-input {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-align: center;
 }
 
 .advantages-city {
   grid-column: 1/2;
   padding: 92px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-house {
   grid-column: 1/2;
   padding: 80px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-food {
   padding: 80px 85px 81px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-souvenirs {
   padding: 80px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-bridge {
   grid-column: 3/4;
   padding: 92px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-area {
   grid-column: 1/2;
   padding: 102px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-road {
   padding: 102px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 .advantages-tourists {
   padding: 102px 85px;
-  display: flex;
-  flex-direction: column;
 }
 
 /*Оформление списка преимуществ*/
@@ -274,7 +259,7 @@ input.control-input {
 
 .advantages-description {
   font-size: 18px;
-  line-height: 12px;
+  line-height: 21px;
   margin: 0;
   margin-top: 30px;
 }
@@ -341,7 +326,6 @@ input.control-input {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
-
 }
 
 .hotel-search-description {
@@ -588,8 +572,6 @@ input.control-input {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
