@@ -434,6 +434,8 @@ input.control-input {
   padding: 0;
 }
 
+/* Хлебные крошки*/
+
 .breadcrumbs-list {
   font-size: 16px;
   line-height: 21px;
@@ -458,6 +460,8 @@ input.control-input {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+/*Список фильтров для гостиниц*/
 
 .catalog-filter-container {
   width: 1060px;
@@ -485,6 +489,8 @@ input.control-input {
   line-height: 20px;
   text-align: center;
 }
+
+/*Сортировка*/
 
 .catalog-sorting-container {
   display: flex;
