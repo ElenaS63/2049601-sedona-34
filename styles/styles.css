@@ -214,11 +214,25 @@ input.control-input {
   padding: 92px 85px;
   display: flex;
   flex-direction: column;
-  align-content: center;
 }
 
 .advantages-house {
   grid-column: 1/2;
+  padding: 80px 85px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-food {
+  padding: 80px 85px 81px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-souvenirs {
+  padding: 80px 85px;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages-bridge {
@@ -226,13 +240,28 @@ input.control-input {
   padding: 92px 85px;
   display: flex;
   flex-direction: column;
-  align-content: center;
 }
 
 .advantages-area {
   grid-column: 1/2;
-  padding: 92p
+  padding: 102px 85px;
+  display: flex;
+  flex-direction: column;
 }
+
+.advantages-road {
+  padding: 102px 85px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-tourists {
+  padding: 102px 85px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Оформление списка преимуществ*/
 
 .advantages-title {
   font-weight: 700;
@@ -297,6 +326,8 @@ input.control-input {
   height: 384px;
 }
 */
+
+/*Блок с поиском отеля*/
 
 .hotel-search {
   text-align: center;
