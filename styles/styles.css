@@ -171,9 +171,35 @@ input.control-input {
 }
 
 /*Аdvantages*/
+
+
+/* НУЖНО ЛИ ЗАДАВАТЬ ЦЕНТРОВКУ ВСЕМ ЭЛЕМЕНТАМ ТАК??
 .advantages {
   text-align: center;
+} */
+
+.advantages-reasons-container {
+  padding: 63px 273px 90px;
+  text-align: center;
 }
+
+.advantages-sedona-description {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.advantages-sedona-reasons {
+  color: #333333;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/*Список преимуществ*/
 
 .advantages-list {
   display: grid;
@@ -183,11 +209,12 @@ input.control-input {
   list-style-type: none;
 }
 
-
-/*Расположение элементов преимуществ по гриду*/
-
 .advantages-city {
-  grid-column: 1/-1;
+  grid-column: 1/2;
+  padding: 92px 85px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .advantages-house {
@@ -195,22 +222,11 @@ input.control-input {
 }
 
 .advantages-bridge {
-  grid-column: 1/-1;
-}
-
-
-.advantages-sedona-description {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin: 63px 290px 31px;
-}
-
-.advantages-sedona-reasons {
-  color: #333333;
-  background-color: #ffffff;
-  margin: 0 271px 90px;
+  grid-column: 1/1;
+  padding: 92px 85px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .advantages-title {
@@ -218,11 +234,15 @@ input.control-input {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
   font-size: 18px;
   line-height: 12px;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .advantages-description-second {
@@ -241,10 +261,6 @@ input.control-input {
 .advantages-title-first,
 .advantages-description-first {
   color: #ffffff;
-}
-
-.advantages-item {
-  width: 400px;
 }
 
 .advantages-item-first {
@@ -322,6 +338,8 @@ input.control-input {
   margin: 0 auto;
 }
 
+/*Блок с подпиской*/
+
 .footer-subscription {
   background-image: url("../images/footer/footer-background.jpg");
   background-size: 100% auto;
@@ -359,6 +377,7 @@ input.control-input {
   padding: 46px 200px 94px;
 }
 
+/*Контакты*/
 
 .contacts-container {
   display: flex;
@@ -518,13 +537,17 @@ input.control-input {
 
 .button-view-container {
   display: flex;
+  width: 160px;
   margin-left: 78px;
+  justify-content: space-between;
 }
 
 .button-view {
   width: 48px;
   height: 48px;
 }
+
+/*карточки товаров*/
 
 .catalog {
   width: 1056px;
