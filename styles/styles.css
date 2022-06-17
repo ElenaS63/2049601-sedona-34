@@ -160,13 +160,13 @@ input.control-input {
 
 .main-image-welcome {
   display: block;
-  margin: 51px 371px 82px;
 }
 
 .main-image {
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding: 51px 371px 82px;;
 }
 
 /*Аdvantages*/
@@ -402,16 +402,16 @@ input.control-input {
   padding: 35px 70px 70px;
 }
 
+.catalog-hotel {
+ margin-top: 40px;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
   padding: 0;
-}
-
-.inner-header {
-  padding-bottom: 40px;
 }
 
 .breadcrumbs-list {
