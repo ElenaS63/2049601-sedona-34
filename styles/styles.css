@@ -222,11 +222,16 @@ input.control-input {
 }
 
 .advantages-bridge {
-  grid-column: 1/1;
+  grid-column: 3/4;
   padding: 92px 85px;
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.advantages-area {
+  grid-column: 1/2;
+  padding: 92p
 }
 
 .advantages-title {
@@ -295,7 +300,7 @@ input.control-input {
 
 .hotel-search {
   text-align: center;
-  padding-bottom: 93px;
+  padding: 91px 304px 93px;
 }
 
 .hotel-search-question {
@@ -303,8 +308,8 @@ input.control-input {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  padding: 0;
-  margin: 91px 451px 29px;
+  margin: 0;
+  margin-bottom: 29px;
 
 }
 
@@ -312,9 +317,6 @@ input.control-input {
   color: #333333;
   background-color: #ffffff;
   margin: 0;
-  padding: 0;
-  margin-left: 304px;
-  margin-right: 304px;
 }
 
 .hotel-search-link.button-basic {
@@ -325,8 +327,6 @@ input.control-input {
   display: block;
   width: 574px;
   margin-top: 56px;
-  margin-left: 313px;
-  margin-right: 313px;
 }
 
 /*Футер*/
@@ -348,6 +348,11 @@ input.control-input {
   color: #ffffff;
   background-color: #82B3D3;
   width: 1200px;
+
+}
+
+.footer-subscription-container {
+  padding: 94px 200px;
 }
 
 .subscription-title {
@@ -355,16 +360,13 @@ input.control-input {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  min-width: 404px;
-  margin: 94px 398px 29px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .subscription-description {
   min-width: 476px;
   margin: 0;
-  padding: 0;
-  margin-left: 362px;
-  margin-right: 362px;
 }
 
 .button-newsletter {
@@ -374,7 +376,7 @@ input.control-input {
 
 .newsletter-form {
   width: 600px;
-  padding: 46px 200px 94px;
+  margin-top: 46px;
 }
 
 /*Контакты*/
