@@ -20,6 +20,7 @@ html {
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -51,6 +52,7 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .button-selected {
@@ -171,12 +173,6 @@ input.control-input {
 }
 
 /*Аdvantages*/
-
-
-/* НУЖНО ЛИ ЗАДАВАТЬ ЦЕНТРОВКУ ВСЕМ ЭЛЕМЕНТАМ ТАК??
-.advantages {
-  text-align: center;
-} */
 
 .advantages-reasons-container {
   padding: 63px 273px 90px;
@@ -527,11 +523,13 @@ input.control-input {
 }
 
 /*Сортировка*/
+.catalog-sorting {
+  padding: 50px 71px 56px;
+}
 
 .catalog-sorting-container {
   display: flex;
-  width: 1056px;
-  margin: 50px 71px 56px;
+  width: 1057px;
 }
 
 .catalog-sorting-text {
@@ -541,7 +539,7 @@ input.control-input {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  margin-right: 190px;
+  margin-right: 191px;
 }
 
 .select-control {
@@ -572,13 +570,23 @@ input.control-input {
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .hotel-card {
-  width: 340px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  margin: 20px;
+  gap: 16px 20px;
+}
+
+.hotel-card-image {
+  grid-column: 1/-1;
 }
 
 .hotel-card-title {
@@ -586,6 +594,8 @@ input.control-input {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  grid-column: 1/-1;
+  margin: 0;
 }
 
 .hotel-card-text {
@@ -593,16 +603,25 @@ input.control-input {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  margin: 0;
 }
 
 .hotel-card-rating-text {
   font-size: 16px;
   line-height: 20px;
   background-color: #F2F2F2;
+  text-align: center;
+  padding: 9px 22px 8px;
 }
 
 .hotel-description-link {
   text-decoration: none;
+}
+
+.product-rating-stars {
+  width: 90px;
+  height: 17px;
+  background-image: url("../images/catalog/star.svg");
 }
 
 /*Пагинация*/
@@ -639,6 +658,12 @@ input.control-input {
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 0;
+}
+
+.view-option-text {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .view-option {
