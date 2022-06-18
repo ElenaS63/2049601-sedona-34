@@ -587,6 +587,7 @@ input.control-input {
 
 .hotel-card-image {
   grid-column: 1/-1;
+  object-fit: contain;
 }
 
 .hotel-card-title {
