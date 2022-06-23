@@ -32,6 +32,13 @@ body {
 
 /*Кнопки*/
 
+.button {
+  border: none;
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
 .button-basic {
   font-weight: 700;
   font-size: 16px;
@@ -52,7 +59,6 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 2px;
 }
 
 .button-selected {
@@ -138,6 +144,13 @@ input.control-input {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-menu-item:nth-child(2) {
+  margin-right: 19px;
 }
 
 .user-menu-link.button-basic {
@@ -145,6 +158,10 @@ input.control-input {
   line-height: 20px;
   color: #ffffff;
   background-color: #756157;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 15px 8px;
 }
 
 .main-container {
@@ -651,6 +668,7 @@ input.control-input {
   width: 60px;
   height: 60px;
   padding: 11px 21px;
+  border-radius: 5px;
 }
 
 .pagination-current {
