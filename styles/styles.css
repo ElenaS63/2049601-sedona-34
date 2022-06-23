@@ -142,9 +142,8 @@ input.control-input {
 
 .user-menu-link {
   min-width: 42px;
-  min-height: 66px;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -154,11 +153,15 @@ input.control-input {
   position: relative;
 }
 
+.user-menu-item-button {
+  padding: 14px 0;
+}
+
 .user-menu-link-heart::after {
   content: "12";
   font-weight: 400;
   font-size: 10px;
-  line-height: 13px;
+  line-height: 0;
   text-align: center;
   color: #FFFFFF;
   width: 20px;
@@ -168,6 +171,10 @@ input.control-input {
   position: absolute;
   left: 55%;
   top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-menu-link.button-basic {
@@ -175,10 +182,9 @@ input.control-input {
   line-height: 20px;
   color: #ffffff;
   background-color: #756157;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 9px 15px 8px;
+  width: 160px;
+  height: 37px;
 }
 
 .navigation-icon {
@@ -212,10 +218,21 @@ input.control-input {
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 51px 371px 82px;
-  ;
+  position: relative;
+  display: block;
 }
 
-/*Аdvantages*/
+.main-image::after {
+  content: url(../images/index/index-background-cut.png);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateY(428px);
+}
+
+/*Преимущества*/
 
 .advantages-reasons-container {
   padding: 63px 273px 90px;
@@ -252,6 +269,16 @@ input.control-input {
 .advantages-city {
   grid-column: 1/2;
   padding: 92px 85px;
+  position: relative;
+}
+
+.advantages-city::after {
+  content: url("../images/index/advantages-photo-1.jpg");
+  width: 800px;
+  height: 384px;
+  position: absolute;
+  left: 100%;
+  top: 0;
 }
 
 .advantages-house {
@@ -270,6 +297,16 @@ input.control-input {
 .advantages-bridge {
   grid-column: 3/4;
   padding: 92px 85px;
+  position: relative;
+}
+
+.advantages-bridge::before {
+  content: url("../images/index/advantages-photo-2.jpg");
+  width: 800px;
+  height: 384px;
+  position: absolute;
+  right: 100%;
+  top: 0;
 }
 
 .advantages-area {
@@ -310,6 +347,7 @@ input.control-input {
 .number {
   font-size: 18px;
   line-height: 21px;
+  display: block;
 }
 
 .number-first {
