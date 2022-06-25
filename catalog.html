@@ -22,8 +22,8 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link navigation-link-current">Гостиницы</a>
+            <li class="navigation-item navigation-item-current">
+              <a class="navigation-link">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -110,7 +110,7 @@
             </h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog-filter-container">
-                <div class="catalog-filter-element">
+                <div class="catalog-filter-first-element">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">
                       Инфраструктура:
@@ -162,7 +162,7 @@
                     </ul>
                   </fieldset>
                 </div>
-                <div class="catalog-filter-element">
+                <div class="catalog-filter-second-element">
                   <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">
                       Стоимость, Р:
@@ -181,7 +181,7 @@
                     </label>
                     <!--тут будет бегунок-->
                   </fieldset>
-                  <div>
+                  <div class="catalog-filter-buttons">
                     <button class="button button-second" type="submit">
                       Применить
                     </button>
@@ -202,7 +202,7 @@
             <p class="catalog-sorting-text">
               Найдено гостиниц: 38
             </p>
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select-control select-control-sorting" aria-label="Сортировка">
               <option value="cheap">Сначала дешёвое</option>
               <option value="popular">Сначала популярное</option>
               <option value="expensive">Сначала дорогое</option>
