@@ -30,13 +30,16 @@ body {
   min-height: 100%;
 }
 
+
 /*Кнопки*/
 
 .button {
   border: none;
   display: inline-block;
+  box-sizing: border-box;
   padding: 12px 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button-basic {
@@ -47,7 +50,6 @@ body {
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .button-second {
@@ -58,7 +60,6 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .button-selected {
@@ -69,7 +70,6 @@ body {
   color: #ffffff;
   background-color: #7DB54F;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 
@@ -149,7 +149,6 @@ input.control-input {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   position: relative;
 }
 
@@ -283,15 +282,27 @@ input.control-input {
 
 .advantages-house {
   grid-column: 1/2;
-  padding: 80px 85px;
+  padding: 185px 85px 80px;
+  background-image: url("../images/index/advantages-housing.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center 80px;
 }
 
 .advantages-food {
-  padding: 80px 85px 81px;
+  padding: 185px 85px 80px;
+  background-image: url("../images/index/advantages-eating.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center 80px;
 }
 
 .advantages-souvenirs {
-  padding: 80px 85px;
+  padding: 185px 85px 80px;
+  background-image: url("../images/index/advantages-souvenir.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center 80px;
 }
 
 .advantages-bridge {
@@ -370,24 +381,6 @@ input.control-input {
 .advantages-item-third {
   background-color: rgba(131, 179, 211, 0.2);
 }
-
-/* фото для преимуществ
-.advantages-image-first {
-  background-image: url("../images/index/advantages-photo-1.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 384px;
-}
-
-.advantages-image-second {
-  background-image: url("../images/index/advantages-photo-2.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 384px;
-}
-*/
 
 /*Блок с поиском отеля*/
 
@@ -563,6 +556,7 @@ input.control-input {
   display: flex;
   min-width: 12px;
   min-height: 12px;
+  position: relative;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -574,12 +568,28 @@ input.control-input {
   text-decoration: none;
 }
 
+.breadcrumbs-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
 /*Список фильтров для гостиниц*/
 
 .catalog-filter-container {
   width: 1060px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-element {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 70px;
 }
 
 .catalog-filter-title {
@@ -590,6 +600,9 @@ input.control-input {
 .catalog-filter-list {
   font-size: 18px;
   line-height: 21px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .control-price {
@@ -634,13 +647,23 @@ input.control-input {
 .button-view-container {
   display: flex;
   width: 160px;
-  margin-left: 78px;
+  margin-left: auto;
   justify-content: space-between;
 }
 
 .button-view {
   width: 48px;
   height: 48px;
+  position: relative;
+}
+
+.button-view-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 /*карточки товаров*/
