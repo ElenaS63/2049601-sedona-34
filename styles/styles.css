@@ -205,10 +205,6 @@ input.control-input {
   position: relative;
 }
 
-.user-menu-item-button {
-  padding: 14px 0;
-}
-
 .user-menu-link-heart::after {
   content: "12";
   font-weight: 400;
@@ -236,7 +232,7 @@ input.control-input {
   background-color: #756157;
   padding: 9px 15px 8px;
   width: 160px;
-  height: 37px;
+  align-self: center;
 }
 
 .navigation-icon {
@@ -478,7 +474,7 @@ input.control-input {
 
 /*Блок с подпиской*/
 
-.footer-subscription {
+.footer-index-subscription {
   background-image: url("../images/footer/footer-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -486,7 +482,11 @@ input.control-input {
   color: #ffffff;
   background-color: #82B3D3;
   width: 1200px;
+}
 
+.footer-catalog-subscription {
+  text-align: center;
+  width: 1200px;
 }
 
 .footer-subscription-container {
@@ -503,8 +503,11 @@ input.control-input {
 }
 
 .subscription-description {
-  min-width: 476px;
   margin: 0;
+}
+
+.subscription-description-catalog {
+  color: #333333;
 }
 
 .button-newsletter {
@@ -777,6 +780,7 @@ input.control-input {
   color: #FFFFFF;
   background-color: rgba(28, 28, 28, 0);
   border: none;
+  margin-top: 20px;
 }
 
 /*Сортировка*/
