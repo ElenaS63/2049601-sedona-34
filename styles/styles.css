@@ -460,6 +460,8 @@ input.control-input {
   display: block;
   width: 574px;
   margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Футер*/
