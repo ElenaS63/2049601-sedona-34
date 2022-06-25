@@ -38,7 +38,7 @@ body {
   display: inline-block;
   box-sizing: border-box;
   padding: 12px 15px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -52,6 +52,19 @@ body {
   text-transform: uppercase;
 }
 
+.button-basic:hover {
+  background-color: #615048;
+}
+
+.button-basic:focus {
+  background-color: #615048;
+}
+
+.button-basic:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-second {
   font-weight: 700;
   font-size: 16px;
@@ -60,6 +73,19 @@ body {
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
+}
+
+.button-second:hover {
+  background-color: #68A2CA;
+}
+
+.button-second:focus {
+  background-color: #68A2CA;
+}
+
+.button-second:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-selected {
@@ -72,6 +98,18 @@ body {
   text-transform: uppercase;
 }
 
+.button-selected:hover {
+  background-color: #6C9E42;
+}
+
+.button-selected:focus {
+  background-color: #6C9E42;
+}
+
+.button-selected:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /*Поля форм*/
 input.field {
@@ -627,6 +665,31 @@ input.control-input {
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-icon-house:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-text:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon-house:focus {
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-text:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-icon-house:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-text:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Список фильтров для гостиниц*/
