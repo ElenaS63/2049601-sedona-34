@@ -16,18 +16,22 @@
 
 html {
   height: 100%;
+  background-color: #E5E5E5;
 }
 
 body {
+  width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -112,8 +116,8 @@ body {
 }
 
 .button:disabled {
- background-color: #E5E5E5;
- color: #FFFFFF;
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 /*Поля форм*/
@@ -534,12 +538,12 @@ input.control-input {
 }
 
 .button-newsletter {
+  width: 200px;
   font-size: 20px;
   line-height: 36px;
 }
 
 .newsletter-form {
-  width: 600px;
   margin-top: 46px;
 }
 
@@ -805,6 +809,7 @@ input.control-input {
   background-color: rgba(28, 28, 28, 0);
   border: none;
   margin-top: 20px;
+  padding: 0;
 }
 
 /*Сортировка*/
@@ -872,20 +877,17 @@ input.control-input {
   border-radius: 4px;
 }
 
-
 .button-view:hover {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 .button-view:focus {
   border: 2px solid #68A2CA;
-  border-radius: 4px;
+  outline-offset: 0;
 }
 
 .button-view:active {
   border: 2px solid #000000;
-  border-radius: 4px;
 }
 
 /*карточки товаров*/
