@@ -197,6 +197,7 @@ input.control-input {
 .user-menu-item {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .user-menu-item:nth-child(2) {
@@ -215,12 +216,9 @@ input.control-input {
   position: relative;
 }
 
-.user-menu-link-heart::after {
-  content: "12";
+.score {
   font-weight: 400;
   font-size: 10px;
-  line-height: 0;
-  text-align: center;
   color: #FFFFFF;
   width: 20px;
   height: 20px;
@@ -235,6 +233,10 @@ input.control-input {
   justify-content: center;
 }
 
+.user-menu-link:not(.button-basic) {
+  height: 66px;
+}
+
 .user-menu-link.button-basic {
   font-size: 16px;
   line-height: 20px;
@@ -242,7 +244,6 @@ input.control-input {
   background-color: #756157;
   padding: 9px 15px 8px;
   width: 160px;
-  align-self: center;
 }
 
 .user-menu-link.button-basic:hover {
@@ -302,7 +303,7 @@ input.control-input {
   left: 0;
   right: 0;
   bottom: 0;
-  transform: translateY(5px);
+  transform: translateY(6px);
 }
 
 
