@@ -155,7 +155,7 @@ input.control-input {
 }
 
 .navigation-list {
-  width: 390px;
+  width: 600px;
 }
 
 .navigation-link {
@@ -175,11 +175,12 @@ input.control-input {
 .navigation-item-current::after {
   content: "";
   position: absolute;
+  width: calc(100% - 34px);
   border-bottom: 2px solid #756257;
   left: 0;
   top: 0;
   bottom: -1px;
-  right: 0;
+  margin: 0 17px;
   z-index: 2;
 }
 
@@ -283,9 +284,12 @@ input.control-input {
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  padding: 51px 371px 82px;
+  padding: 51px 0 82px;
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-image::after {
@@ -293,10 +297,10 @@ input.control-input {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
-  transform: translateY(428px);
+  transform: translateY(5px);
 }
+
 
 /*Преимущества*/
 
@@ -476,7 +480,6 @@ input.control-input {
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
-  display: block;
   width: 574px;
   margin-top: 56px;
   margin-left: auto;
