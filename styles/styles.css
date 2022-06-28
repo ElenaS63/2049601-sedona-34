@@ -594,10 +594,21 @@ input.control-input {
   width: 200px;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0 10px 10px 0;
 }
 
 .newsletter-form {
   margin-top: 46px;
+  display: flex;
+}
+
+.newsletter-email {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.newsletter-email .field {
+  width: 600px;
 }
 
 /*Контакты*/
