@@ -124,15 +124,6 @@ body {
   cursor: default;
 }
 
-/*Поля форм*/
-input.field {
-  font-family: "PT Sans", sans-serif;
-}
-
-input.control-input {
-  font-family: "PT Sans", sans-serif;
-}
-
 /*Header*/
 
 /*Навигация*/
@@ -590,6 +581,8 @@ input.control-input {
   color: #333333;
 }
 
+/*Форма подписки*/
+
 .button-newsletter {
   width: 200px;
   font-size: 20px;
@@ -597,18 +590,49 @@ input.control-input {
   border-radius: 0 10px 10px 0;
 }
 
+.field {
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  background-color: #F2F2F2;
+  border: none;
+}
+
 .newsletter-form {
   margin-top: 46px;
   display: flex;
 }
 
-.newsletter-email {
+.newsletter-email-field {
   flex-grow: 1;
-  margin: 0;
+  padding-left: 22px;
+  border-radius: 10px 0 0 10px;
 }
 
-.newsletter-email .field {
-  width: 600px;
+/*Оформление состояний для полей форм*/
+.field:hover {
+  background: #E6E6E6;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.field:active {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.field:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #F2F2F2;
+}
+
+.field:invalid {
+  background-color: #F2F2F2;
 }
 
 /*Контакты*/
@@ -1022,16 +1046,16 @@ input.control-input {
 }
 
 .hotel-card .button-basic {
- padding: 9px 15px 8px;
+  padding: 9px 15px 8px;
 }
 
 .hotel-card .button-second {
   padding: 9px 0 8px;
- }
+}
 
- .hotel-card .button-selected {
+.hotel-card .button-selected {
   padding: 9px 0 8px;
- }
+}
 
 .product-rating-stars-four {
   width: 85px;
@@ -1112,4 +1136,63 @@ input.control-input {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/*Модальное окно*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 54px 70px 70px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-search {
+  width: 575px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close-icon {
+  fill: #000000;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
+  outline: none;
 }
