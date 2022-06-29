@@ -832,7 +832,7 @@ body {
 
 /*Список фильтров для гостиниц*/
 
-.catalog-filter-container {
+.catalog-filter {
   width: 1060px;
   margin: 0 auto;
   display: flex;
