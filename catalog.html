@@ -108,7 +108,6 @@
               Список фильтров для гостиниц
             </h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
               <div class="catalog-filter-first-element">
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">
@@ -166,18 +165,16 @@
                   <legend class="catalog-filter-title">
                     Стоимость, Р:
                   </legend>
-                  <label class="control control-price">
-                    <span>
-                      от
-                    </span>
-                    <input class="control-input" type="number" name="cost" value="0">
-                  </label>
-                  <label class="control control-price">
-                    <span>
-                      до
-                    </span>
-                    <input class="control-input" type="number" name="cost" value="9000">
-                  </label>
+                  <div class="range-price-container">
+                    <div class="cost-field">
+                      <label for="cost-min" class="range-price">от</label>
+                      <input class="range-input range-input-left" type="number" id="cost-min" name="cost" value="0">
+                    </div>
+                    <div class="cost-field">
+                      <label for="cost-max" class="range-price">до </label>
+                      <input class="range-input range-input-right" type="number" id="cost-max" name="cost" value="9000">
+                    </div>
+                  </div>
                   <!--тут будет бегунок-->
                 </fieldset>
                 <div class="catalog-filter-buttons">

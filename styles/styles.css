@@ -166,7 +166,6 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-  padding: 20px 17px;
 }
 
 .navigation-item-current {
@@ -187,17 +186,21 @@ body {
 
 .navigation-item {
   box-sizing: border-box;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 17px;
 }
 
 /*Оформление состояний элементов навигации*/
 
 .navigation-link:hover {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .navigation-link:focus {
-  border: 2px solid #68A2CA;
-  outline: none;
+  outline: 2px solid #68A2CA;
 }
 
 .navigation-link:active {
@@ -205,12 +208,11 @@ body {
 }
 
 .navigation-logo:hover {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .navigation-logo:focus {
-  border: 2px solid #68A2CA;
-  outline: none;
+  outline: 2px solid #68A2CA;
 }
 
 /*Пользовательское меню*/
@@ -626,13 +628,25 @@ body {
   outline: none;
 }
 
-.field:disabled {
+.field:disabled,
+.field:disabled:hover {
   border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: #F2F2F2;
 }
 
 .field:invalid {
-  background-color: #F2F2F2;
+  box-shadow: none;
+}
+
+.field:focus:invalid {
+  border-color: #F2F2F2;
+}
+
+/*Placeholder*/
+
+.field::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 /*Контакты*/
@@ -857,6 +871,46 @@ body {
   column-gap: 70px;
 }
 
+.range-price-container {
+  display: flex;
+}
+
+.cost-field {
+  display: flex;
+  position: relative;
+}
+
+.range-price {
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 0.3;
+  position: absolute;
+  top: 14px;
+  left: 110px;
+}
+
+.range-input {
+  width: 144px;
+  margin: 0;
+  color: #FFFFFF;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  padding: 14px 14px 13px 19px;
+}
+
+.range-input-left {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-right {
+  border-radius: 0 4px 4px 0;
+}
+
+
 .catalog-filter-buttons {
   display: flex;
   width: 160px;
@@ -874,6 +928,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .catalog-filter-list {
@@ -892,17 +947,12 @@ body {
   margin-bottom: 0;
 }
 
-.control-price {
-  font-size: 18px;
-  line-height: 21px;
-}
-
 .control-input-reset {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  background-color: rgba(28, 28, 28, 0);
+  background: transparent;
   border: none;
   margin-top: 20px;
   padding: 0;
@@ -962,9 +1012,6 @@ body {
   left: 0;
   margin: auto;
 }
-
-/*Оформление состояний элементов смены режима отображения карточек*/
-
 .button-view-current {
   border: 2px solid #000000;
   border-radius: 4px;
@@ -974,6 +1021,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+/*Оформление состояний элементов смены режима отображения карточек*/
 
 .button-view:hover {
   border: 2px solid #000000;
@@ -1158,6 +1206,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+  z-index: 3;
 }
 
 .modal-search {
