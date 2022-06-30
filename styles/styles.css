@@ -891,7 +891,7 @@ body {
   background-color: transparent;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
-  padding: 14px 14px 13px 19px;
+  padding: 12px 14px 12px 14px;
 }
 
 .range-input-left {
@@ -906,8 +906,8 @@ body {
   display: flex;
   width: 160px;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
+  padding-top: 60px;
 }
 
 .catalog-filter-buttons .button {
@@ -920,6 +920,10 @@ body {
   font-size: 20px;
   margin-bottom: 30px;
   padding: 0;
+}
+
+.title-range {
+  margin-bottom: 34px;
 }
 
 .catalog-filter-list {
@@ -979,11 +983,52 @@ body {
 
 /*Слайдер*/
 
-.range {
-  margin-top: 20px;
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 28px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+
+/*Оформление состояний для ручек рендж-слайдера*/
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 /*Сортировка*/
+
 .catalog-sorting {
   padding: 50px 71px 56px;
 }

@@ -162,7 +162,7 @@
               </div>
               <div class="catalog-filter-second-element">
                 <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">
+                  <legend class="catalog-filter-title title-range">
                     Стоимость, Р:
                   </legend>
                   <div class="range-price-container">
@@ -175,7 +175,19 @@
                       <input class="range-input range-input-right" type="number" id="cost-max" name="cost" value="9000">
                     </div>
                   </div>
-                  <div class="range">Тут будет слайдер</div>
+
+
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 227px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
                 </fieldset>
                 <div class="catalog-filter-buttons">
                   <button class="button button-second" type="submit">
