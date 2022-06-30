@@ -204,7 +204,7 @@ body {
 }
 
 .navigation-link:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .navigation-logo:hover {
@@ -612,7 +612,8 @@ body {
   border-radius: 10px 0 0 10px;
 }
 
-/*Оформление состояний для полей форм*/
+/*Оформление состояний для полей форм подписки*/
+
 .field:hover {
   background: #E6E6E6;
 }
@@ -628,18 +629,9 @@ body {
   outline: none;
 }
 
-.field:disabled,
-.field:disabled:hover {
+.field:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   background-color: #F2F2F2;
-}
-
-.field:invalid {
-  box-shadow: none;
-}
-
-.field:focus:invalid {
-  border-color: #F2F2F2;
 }
 
 /*Placeholder*/
@@ -910,7 +902,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-
 .catalog-filter-buttons {
   display: flex;
   width: 160px;
@@ -956,6 +947,40 @@ body {
   border: none;
   margin-top: 20px;
   padding: 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/*Оформление состояний для полей с ценой*/
+
+.range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus:not(:active) {
+  box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+  outline: none;
+}
+
+.range-input:active {
+  background: #756257;
+  border: 2px solid #FFFFFF;
+  outline: none;
+}
+
+.range-input:disabled {
+  opacity: 0.3;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/*Слайдер*/
+
+.range {
+  margin-top: 20px;
 }
 
 /*Сортировка*/
@@ -1012,6 +1037,7 @@ body {
   left: 0;
   margin: auto;
 }
+
 .button-view-current {
   border: 2px solid #000000;
   border-radius: 4px;
@@ -1021,6 +1047,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
+
 /*Оформление состояний элементов смены режима отображения карточек*/
 
 .button-view:hover {
