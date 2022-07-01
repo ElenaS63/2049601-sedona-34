@@ -109,55 +109,62 @@
             </h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog-filter-first-element">
+                <!--Чекбокс-->
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">
                     Инфраструктура:
                   </legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <label class="control">
+                      <labeql class="control">
                         <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
-                        <span class="control-checkbox-mark"></span>
+                        <span class="control-mark"></span>
                         <span class="control-label">Бассейн</span>
-                      </label>
+                        </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
-                        <span class="control-checkbox-mark"></span>
+                        <span class="control-mark"></span>
                         <span class="control-label">Парковка</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
                         <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
-                        <span class="control-checkbox-mark"></span>
+                        <span class="control-mark"></span>
                         <span class="control-label">Wi-Fi</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
+                <!--Радио-кнопки-->
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">
-                    Тип жилья:
+                    Тип Жилья:
                   </legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                        Гостиница
+                        <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="hotel"
+                          checked>
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                        Мотель
+                        <input class="control-input visually-hidden" type="radio" name="type-of-housing" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control">
-                        <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                        Апартаменты
+                        <input class="control-input visually-hidden" type="radio" name="type-of-housing"
+                          value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                       </label>
                     </li>
                   </ul>
@@ -209,11 +216,13 @@
             <p class="catalog-sorting-text">
               Найдено гостиниц: 38
             </p>
-            <select class="select-control select-control-sorting" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="popular">Сначала популярное</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
+            <div class="select select-sorting-type">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="popular">Сначала популярное</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+            </div>
             <div class="button-view-container">
               <a class="button-view button-view-current" href="#">
                 <span class="visually-hidden">
@@ -366,12 +375,14 @@
             </li>
           </ul>
           <p class="view-option-text">гостиниц на странице:</p>
-          <select class="view-option select-control" name="options">
-            <option class="view-option-item" value="forth">4</option>
-            <option class="view-option-item" value="third">3</option>
-            <option class="view-option-item" value="second">2</option>
-            <option class="view-option-item" value="first">1</option>
-          </select>
+          <div class="select select-view-option">
+            <select class="select-control" name="options">
+              <option class="view-option-item" value="forth">4</option>
+              <option class="view-option-item" value="third">3</option>
+              <option class="view-option-item" value="second">2</option>
+              <option class="view-option-item" value="first">1</option>
+            </select>
+          </div>
         </section>
       </div>
     </main>

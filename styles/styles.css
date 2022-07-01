@@ -768,6 +768,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
 }
 
@@ -778,7 +779,6 @@ body {
   line-height: 21px;
   margin: 0;
   padding: 0;
-  margin-top: 10px;
   display: flex;
   list-style-type: none;
   min-width: 110px;
@@ -871,7 +871,7 @@ body {
   padding-left: 40px;
 }
 
-.control-checkbox-mark {
+.control-mark {
   position: absolute;
   left: 0;
   width: 20px;
@@ -880,7 +880,7 @@ body {
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-checkbox-mark::after {
+.control-input[type="checkbox"]:checked+.control-mark::before {
   content: url("../images/catalog/control-checkbox.svg");
   position: absolute;
   right: 3px;
@@ -889,17 +889,43 @@ body {
 
 /*Оформление состояний чекбокса*/
 
-.control:hover .control-checkbox-mark {
+.control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-checkbox-mark {
+.control:focus-within .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
 
-.control:active .control-checkbox-mark {
+.control:active .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*Радио-кнопки*/
+
+.control-input[type="radio"]+.control-mark {
+  border-radius: 50%;
+}
+
+
+.control-input[type="radio"]:checked+.control-mark::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+/*Оформление состояний радио-кнопок*/
+
+.control-input[type="radio"]:hover+.control-mark,
+.control-input[type="radio"]:focus+.control-mark,
+.control-input[type="radio"]:active+.control-mark {
+  background-color: #FFFFFF;
 }
 
 .range-price-container {
@@ -939,6 +965,12 @@ body {
 
 .range-input-right {
   border-radius: 0 4px 4px 0;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-buttons {
@@ -989,13 +1021,24 @@ body {
   background: transparent;
   border: none;
   margin-top: 20px;
-  padding: 0;
+  padding: 3px 13px;
+  box-sizing: border-box;
 }
 
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
+/*Оформление состояний Reset*/
+
+.control-input-reset:hover {
+  opacity: 0.6;
+}
+
+.control-input-reset:focus {
+  outline: 3px solid #83B3D3;
+  color: #FFFFFF;
+}
+
+.control-input-reset:active {
+  opacity: 0.3;
+  outline: none;
 }
 
 /*Оформление состояний для полей с ценой*/
@@ -1087,16 +1130,48 @@ body {
   margin-right: 191px;
 }
 
+/*Селект*/
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .select-control {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  width: 100%;
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 13px 32px 13px 20px;
+  background-image: url(../images/catalog/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
-.select-control-sorting {
+.select-sorting-type {
   width: 290px;
+}
+
+/*Оформление состояний селектов*/
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  opacity: 0.3;
 }
 
 .button-view-container {
@@ -1280,7 +1355,7 @@ body {
   line-height: 21px;
 }
 
-.view-option {
+.select-view-option {
   margin-left: auto;
   width: 160px;
 }
