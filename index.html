@@ -324,45 +324,53 @@
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <div class="modal-field-group-date">
-              <p class="modal-field-group">
-                <label class="modal-field" for="arrival-date">Дата заезда:</label>
-                <input class="modal-field" id="arrival-date" type="text" name="arrival-date"
+              <p class="modal-field-date">
+                <label class="modal-field-label" for="arrival-date">Дата заезда:</label>
+                <input class="field modal-input-date" id="arrival-date" type="text" name="arrival-date"
                   placeholder="27 апреля 2020">
                 <button class="modal-date-button" type="button">
-                  <span class="visually-hodden">Календарь</span>
+                  <span class="visually-hidden">Календарь</span>
                 </button>
-              <p class="modal-date-text">Мы не можем отправить вас в прошлое.</p>
-              <p class="modal-field-group">
-                <label class="modal-field" for="leaving-date">Дата заезда:</label>
-                <input class="modal-field" id="leaving-date" type="text" name="leaving-date"
+                <span class="modal-date-text modal-date-text-false">Мы не можем отправить вас в прошлое.</span>
+              </p>
+              <p class="modal-field-date">
+                <label class="modal-field-label" for="leaving-date">Дата заезда:</label>
+                <input class="field modal-input-date" id="leaving-date" type="text" name="leaving-date"
                   placeholder="1 сентября 2021">
                 <button class="modal-date-button" type="button">
-                  <span class="visually-hodden">Календарь</span>
+                  <span class="visually-hidden">Календарь</span>
                 </button>
-              <p class="modal-date-text">На эти даты есть свободные номера. Пока есть.</p>
+                <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
             </div>
 
-            <div class="modal-field-group-visitors">
-              <p class="modal-field-group">
-                <label class="modal-field" for="number-people">Взрослые:</label>
-                <button class="modal-number-button minus" type="button">
-                  <span class="visually-hodden">Меньше</span>
-                </button>
-                <input class="modal-field" id="number-people" type="number" name="number-people" value="2">
-                <button class="modal-number-button plus" type="button">
-                  <span class="visually-hodden">Больше</span>
-                </button>
-              </p>
-              <p class="modal-field-group">
-                <label class="modal-field" for="number-children">Взрослые:</label>
-                <button class="modal-number-button minus" type="button">
-                  <span class="visually-hodden">Меньше</span>
-                </button>
-                <input class="modal-field" id="number-children" type="number" name="number-children" value="1">
-                <button class="modal-number-button plus" type="button">
-                  <span class="visually-hodden">Больше</span>
-                </button>
-              </p>
+            <div class="modal-field-group-number">
+              <div class="modal-field-number">
+                <label class="modal-field-label label-people" for="number-people">Взрослые:</label>
+                <div class="modal-number-container">
+                  <button class="modal-number-button minus" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="field modal-input-number" id="number-people" type="number" name="number-people"
+                    value="2">
+                  <button class="modal-number-button plus" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-field-number">
+                <label class="modal-field-label" for="number-children">Дети:</label>
+                <div class="modal-number-container">
+                  <button class="modal-number-button minus" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                  </button>
+                  <input class="field modal-input-number" id="number-children" type="number" name="number-children"
+                    value="1">
+                  <button class="modal-number-button plus" type="button">
+                    <span class="visually-hidden">Больше</span>
+                  </button>
+                </div>
+              </div>
             </div>
 
             <a class="modal-search-link button button-second" href="#">
