@@ -324,24 +324,24 @@
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
 
             <div class="modal-field-group-date">
-              <p class="modal-field-date">
-                <label class="modal-field-label" for="arrival-date">Дата заезда:</label>
+              <div class="modal-field-date">
+                <label class="modal-field-label" for="arrival-date">Дата Заезда:</label>
                 <input class="field modal-input-date" id="arrival-date" type="text" name="arrival-date"
                   placeholder="27 апреля 2020">
                 <button class="modal-date-button" type="button">
                   <span class="visually-hidden">Календарь</span>
                 </button>
                 <span class="modal-date-text modal-date-text-false">Мы не можем отправить вас в прошлое.</span>
-              </p>
-              <p class="modal-field-date">
-                <label class="modal-field-label" for="leaving-date">Дата заезда:</label>
+              </div>
+              <div class="modal-field-date">
+                <label class="modal-field-label" for="leaving-date">Дата Выезда:</label>
                 <input class="field modal-input-date" id="leaving-date" type="text" name="leaving-date"
                   placeholder="1 сентября 2021">
                 <button class="modal-date-button" type="button">
                   <span class="visually-hidden">Календарь</span>
                 </button>
                 <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
-              </p>
+              </div>
             </div>
 
             <div class="modal-field-group-number">
@@ -359,7 +359,18 @@
                 </div>
               </div>
               <div class="modal-field-number">
-                <label class="modal-field-label" for="number-children">Дети:</label>
+                <div class="modal-field-label label-children modal-form-label-icon">
+                  <label class="modal-field-label " for="number-children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <span class="visually-hidden">Дополнительная информация</span>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </div>
                 <div class="modal-number-container">
                   <button class="modal-number-button minus" type="button">
                     <span class="visually-hidden">Меньше</span>
@@ -372,11 +383,9 @@
                 </div>
               </div>
             </div>
-
             <a class="modal-search-link button button-second" href="#">
               Найти
             </a>
-
           </form>
         </section>
       </div>
