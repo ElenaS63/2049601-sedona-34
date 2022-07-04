@@ -1524,6 +1524,15 @@ body {
 .modal-field-number {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.field-number-children {
+  width: 229px;
+}
+
+.field-number-people {
+ width: 288px;
 }
 
 .modal-number-container {
@@ -1571,15 +1580,6 @@ body {
 .plus::after {
   transform: rotate(90deg);
   right: 6px;
-}
-
-.label-people {
-  margin-right: 64px;
-}
-
-.label-children {
-  padding-right: 48px;
-  position: relative;
 }
 
 

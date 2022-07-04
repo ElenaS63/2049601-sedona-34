@@ -9,13 +9,14 @@
   </head>
 
   <body>
-
+    <!-- Header -->
     <header class="page-header">
       <div class="page-header-container">
         <a class="navigation-logo">
           <img class="page-header-logo" src="images/header/navigation-logo.svg" width="139" height="70"
             alt="Логотип города Седонa.">
         </a>
+        <!-- Навигация -->
         <nav class="navigation">
           <ul class="header-list navigation-list">
             <li class="navigation-item navigation-item-current">
@@ -29,6 +30,7 @@
             </li>
           </ul>
         </nav>
+        <!-- Пользовательское меню -->
         <ul class="header-list user-menu-list">
           <li class="user-menu-item">
             <a class="user-menu-link" href="#">
@@ -73,6 +75,7 @@
         <h1 class="visually-hidden">
           Седона
         </h1>
+        <!-- Главный логотип -->
         <section class="main-image">
           <h2 class="visually-hidden">
             Добро пожаловать
@@ -82,6 +85,7 @@
         </section>
         <section class="advantages">
           <div class="advantages-reasons-container">
+            <!-- Преимущества -->
             <h2 class="visually-hidden">
               Преимущества
             </h2>
@@ -173,6 +177,7 @@
             </li>
           </ol>
         </section>
+        <!-- Поиск гостиницы-->
         <section class="hotel-search">
           <h2 class="visually-hidden">
             Поиск гостиницы в Седоне
@@ -310,7 +315,7 @@
 
     <!-- Модальное окно -->
     <!-- Класс modal-container-close скрывает модальное -->
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal modal-hotel-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -323,7 +328,6 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-
             <div class="modal-field-group-date">
               <div class="modal-field-date">
                 <label class="modal-field-label" for="arrival-date">Дата Заезда:</label>
@@ -344,10 +348,9 @@
                 <span class="modal-date-text">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
-
             <div class="modal-field-group-number">
-              <div class="modal-field-number">
-                <label class="modal-field-label label-people" for="number-people">Взрослые:</label>
+              <div class="modal-field-number field-number-people">
+                <label class="modal-field-label" for="number-people">Взрослые:</label>
                 <div class="modal-number-container">
                   <button class="modal-number-button minus" type="button">
                     <span class="visually-hidden">Меньше</span>
@@ -359,9 +362,9 @@
                   </button>
                 </div>
               </div>
-              <div class="modal-field-number">
-                <div class="modal-field-label label-children modal-form-label-icon">
-                  <label class="modal-field-label " for="number-children">Дети:</label>
+              <div class="modal-field-number field-number-children">
+                <div class="modal-field-label">
+                  <label class="modal-field-label" for="number-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                       <span class="visually-hidden">Дополнительная информация</span>
