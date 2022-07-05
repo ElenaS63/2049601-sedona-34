@@ -255,8 +255,8 @@ body {
   background-color: #7DB54F;
   border-radius: 50%;
   position: absolute;
-  left: 55%;
-  top: 20%;
+  left: 57%;
+  top: 24%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,7 +365,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .advantages-sedona-reasons {
@@ -373,6 +373,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
 /*Список преимуществ*/
@@ -589,8 +590,8 @@ body {
 
 .button-newsletter {
   width: 200px;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 17px;
+  line-height: 21px;
   border-radius: 0 10px 10px 0;
 }
 
@@ -604,7 +605,7 @@ body {
 }
 
 .newsletter-form {
-  margin-top: 46px;
+  margin-top: 44px;
   display: flex;
 }
 
@@ -764,7 +765,7 @@ body {
   background-color: #82B3D3;
   display: flex;
   flex-direction: column;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 66px 70px;
 }
 
 .catalog-hotel {
@@ -801,7 +802,7 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .breadcrumbs-link {
@@ -986,7 +987,7 @@ body {
 .catalog-filter-buttons .button {
   width: 160px;
   padding: 14px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .catalog-filter-title {
@@ -1070,7 +1071,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 28px;
+  margin-top: 26px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1120,6 +1121,7 @@ body {
 .catalog-sorting-container {
   display: flex;
   width: 1057px;
+  align-items: center;
 }
 
 .catalog-sorting-text {
@@ -1251,7 +1253,7 @@ body {
 .hotel-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  margin: 20px;
+  margin: 17px 19px 23px 21px;
   gap: 16px 20px;
 }
 
@@ -1264,7 +1266,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-transform: uppercase;
   grid-column: 1/-1;
   margin: 0;
 }
@@ -1278,11 +1279,11 @@ body {
 }
 
 .hotel-card-rating-text {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 19px;
   background-color: #F2F2F2;
   text-align: center;
-  padding: 9px 22px 8px;
+  padding: 9px 21px 8px;
 }
 
 .hotel-card .button {
@@ -1299,13 +1300,16 @@ body {
 
 .hotel-card .button-second {
   padding: 9px 0 8px;
+  font-size: 14px;
 }
 
 .hotel-card .button-selected {
   padding: 9px 0 8px;
+  font-size: 14px;
 }
 
 .product-rating-stars-four {
+  margin-left: 2px;
   width: 85px;
   background-image: url("../images/catalog/star.svg");
   background-repeat: space no-repeat;
@@ -1330,7 +1334,7 @@ body {
 .pagination {
   display: flex;
   width: 1056px;
-  padding: 96px 72px 25px;
+  padding: 96px 72px 15px;
 }
 
 .pagination-list {
