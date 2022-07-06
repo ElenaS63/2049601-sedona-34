@@ -34,7 +34,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-
 /*Кнопки*/
 
 .button {
@@ -400,7 +399,6 @@ body {
   position: absolute;
   left: 100%;
   top: 0;
-  object-fit: contain;
 }
 
 .advantages-house {
@@ -441,7 +439,6 @@ body {
   position: absolute;
   right: 100%;
   top: 0;
-  object-fit: contain;
 }
 
 .advantages-area {
@@ -661,11 +658,11 @@ body {
 }
 
 .footer-social {
-  margin-right: 42px;
+  margin-right: 44px;
 }
 
 .footer-social-list {
-  width: 142px;
+  max-width: 142px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -676,21 +673,19 @@ body {
 .footer-social-item {
   width: 47px;
   height: 40px;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: #83B3D3;
 }
 
+
 .social-link:hover .social-icon {
   fill: #68A2CA;
+  outline: none;
 }
 
 .social-link:focus .social-icon {
@@ -731,15 +726,18 @@ body {
 }
 
 .footer-htmlacademy-link {
-  margin-left: 43px;
-  position: relative;
+  margin-left: auto;
+}
+
+.contacts-link {
+  display: flex;
+  max-width: 116px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .htmlacademy-icon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
   fill: #000000;
 }
 
