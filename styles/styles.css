@@ -342,7 +342,7 @@ body {
 }
 
 .main-image::after {
-  content: url(../images/index/index-background-cut.png);
+  content: url("../images/index/index-background-cut.png");
   position: absolute;
   left: 0;
   right: 0;
@@ -372,7 +372,6 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  white-space: nowrap;
 }
 
 /*Список преимуществ*/
@@ -688,7 +687,7 @@ body {
   outline: none;
 }
 
-.social-link:focus  {
+.social-link:focus {
   outline: none;
 }
 
@@ -1161,7 +1160,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 13px 32px 13px 20px;
-  background-image: url(../images/catalog/select-arrow.svg);
+  background-image: url("../images/catalog/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -1246,6 +1245,16 @@ body {
 .catalog {
   width: 1056px;
   margin: 0 auto;
+  position: relative;
+}
+
+.catalog::before {
+  content: "";
+  position: absolute;
+  width: 1055px;
+  height: 1px;
+  bottom: -66px;
+  background-color: #E6E6E6;
 }
 
 .hotel-list {
@@ -1342,23 +1351,12 @@ body {
   display: flex;
   width: 1056px;
   padding: 96px 72px 15px;
-  position: relative;
 }
-
-.pagination::before {
-  content: "";
-  position: absolute;
-  width: 1055px;
-  height: 1px;
-  bottom: 113px;
-  background-color: #E6E6E6;
-}
-
 
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 410px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1366,17 +1364,16 @@ body {
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 11px 21px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
-  display: block;
-  box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  padding: 11px 21px;
   border-radius: 5px;
-
 }
 
 .pagination-current {
@@ -1429,11 +1426,9 @@ body {
   z-index: 3;
 }
 
-
 .modal-container-close {
   display: none;
 }
-
 
 .modal {
   position: relative;
@@ -1532,7 +1527,6 @@ body {
   margin-bottom: 9px;
 }
 
-
 .modal-date-button {
   position: absolute;
   top: 0;
@@ -1542,7 +1536,7 @@ body {
   margin-right: 17px;
   margin-top: 18px;
   padding: 0;
-  background-image: url(../images/modal/date.svg);
+  background-image: url("../images/modal/date.svg");
   border: none;
   cursor: pointer;
 }
@@ -1552,7 +1546,6 @@ body {
   outline: 2px solid #83B3D3;
   border-radius: 2px;
 }
-
 
 .modal-field-group-number {
   display: flex;
@@ -1704,7 +1697,7 @@ body {
   border: none;
   width: 25px;
   height: 25px;
-  background-image: url(../images/modal/info.svg);
+  background-image: url("../images/modal/info.svg");
   background-repeat: no-repeat;
   background-color: #83B3D3;
   background-position: center;
