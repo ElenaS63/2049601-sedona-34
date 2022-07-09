@@ -745,7 +745,7 @@ body {
   fill: #000000;
 }
 
-.footer-htmlacademy-link:hover .htmlacademy-icon {
+.contacts-link:hover .htmlacademy-icon {
   fill: #756157;
 }
 
@@ -753,11 +753,11 @@ body {
   outline: none;
 }
 
-.footer-htmlacademy-link:focus .htmlacademy-icon {
+.contacts-link:focus .htmlacademy-icon {
   fill: #756157;
 }
 
-.footer-htmlacademy-link:active .htmlacademy-icon {
+.contacts-link:active .htmlacademy-icon {
   fill: rgba(117, 97, 87, 0.3);
 }
 
