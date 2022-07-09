@@ -188,21 +188,21 @@ body {
 
 .navigation-item {
   display: flex;
-  height: 66px;
 }
 
 /*Оформление состояний элементов навигации*/
 
 .navigation-link:hover {
-  outline: 2px solid #000000;
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
 .navigation-link:focus {
-  outline: 2px solid #68A2CA;
+  box-shadow: inset 0 0 0 2px #68A2CA;
+  outline: none;
 }
 
 .navigation-link:active {
-  outline: 2px solid #000000;
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
 .navigation-logo:hover {
