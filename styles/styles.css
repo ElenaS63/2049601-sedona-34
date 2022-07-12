@@ -1039,6 +1039,7 @@ img {
   border: none;
   padding: 3px 13px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /*Оформление состояний Reset*/
